@@ -45,7 +45,7 @@ MODULE main
 ----------------------------------
 
 -- i. LTL property: The stack pointer is never negative and never larger than the size of
-the stack buffer.
+-- the stack buffer.
 
 
 -- ii. LTL property: The stack is never simultaneously full and empty.
@@ -61,31 +61,31 @@ the stack buffer.
 
 
 -- v. CTL property: At any time, if the user pops when the stack does not have any elements
-in it then the resulting pop value will be NULL.
+-- in it then the resulting pop value will be NULL.
 
 
 
 -- vi. LTL property: At any time, if the user pops when the stack has at least one value in
-it, then the resulting pop value will not be NULL.
+-- it, then the resulting pop value will not be NULL.
 
 
 
 -- vii. LTL property: It is always the case that if x is pushed on the stack and the stack is
-not full, then if in the next state the user decides to pop then in the state after that
-the popped value is x.
+-- not full, then if in the next state the user decides to pop then in the state after that
+-- the popped value is x.
 
 
 
 -- viii. CTL property: Starting from any point in time, it is possible that the stack will
-eventually hold three items.
+-- eventually hold three items.
 
 
 
 -- ix. CTL property: If the stack pointer is 1 and then pop is executed twice in a row, then
-the stack will be empty.
+-- the stack will be empty.
 
 
 
 -- x. LTL property: If the user pushes an x followed directly by a y, and the stack is not full
-during either of those push actions, then if the user immediately pops, the resulting
-value will be y and if the user immediately pops again, the resulting value will be x.
+-- during either of those push actions, then if the user immediately pops, the resulting
+-- value will be y and if the user immediately pops again, the resulting value will be x.
